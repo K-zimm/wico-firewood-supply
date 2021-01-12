@@ -22,6 +22,8 @@ const headingStyles = {
   color: '#ffffff',
   textTransform: 'uppercase',
   fontSize: 52,
+  padding: '0 30px',
+  textAlign: 'center',
 };
 const headingAccentStyles = {
   color: '#663399',
