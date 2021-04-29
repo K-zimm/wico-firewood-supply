@@ -14,7 +14,10 @@ const Footer = () => {
 
   return (
     <footer>
-      <p>&copy; 2021 by {data.site.siteMetadata.title} | All Rights Reserved</p>
+      <p>
+        &copy; 2021 by {data.site.siteMetadata.title} | All Rights Reserved |
+        Site created by K.Zimms
+      </p>
     </footer>
   );
 };
