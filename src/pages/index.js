@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-import BackgroundImage from '../images/camp-fire.jpg';
-import Logo from '../images/logo-light.png';
+import Layout from '../components/layouts/layout';
 
 // styles
 const pageStyles = {
@@ -13,7 +12,6 @@ const pageStyles = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundImage: `linear-gradient(180deg, rgba(19,34,19,1) 0%, rgba(19,34,19,0.5018382352941176) 100%), url(${BackgroundImage}) `,
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
 };
@@ -82,11 +80,12 @@ const links = [];
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Wisco Firewood Supply</title>
-      <img style={logoImg} src={Logo} alt='Wisco Firewood Supply Logo' />
-      <h1 style={headingStyles}>Website Coming Soon!</h1>
-    </main>
+    <Layout>
+      <main style={pageStyles}>
+        <title>Wisco Firewood Supply</title>
+        <h1 style={headingStyles}>Website Coming Soon!</h1>
+      </main>
+    </Layout>
   );
 };
 
