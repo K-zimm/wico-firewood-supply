@@ -7,7 +7,6 @@ const pageStyles = {
   color: '#232129',
   margin: -8,
   fontFamily: '-apple-system, Roboto, sans-serif, serif',
-  minHeight: '100vh',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
