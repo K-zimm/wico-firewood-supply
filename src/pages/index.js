@@ -89,7 +89,7 @@ const IndexPage = () => {
         action='/thank-you/'
         onSubmit={handleSubmit}
       >
-        <input type='hidden' name='form-name' value='commision-request' />
+        <input type='hidden' name='form-name' value='contact' />
         <p>
           <input type='hidden' name='bot-field' onChange={handleChange} />
         </p>

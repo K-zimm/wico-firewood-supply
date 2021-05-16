@@ -60,7 +60,7 @@ const ThankyouPage = () => {
   };
   return (
     <main style={pageStyles}>
-      <title>Tahnk You! | Wisco Firewood Supply</title>
+      <title>Thank You! | Wisco Firewood Supply</title>
       <img style={logoImg} src={Logo} alt='Wisco Firewood Supply Logo' />
       <h1 style={headingStyles}>Thank you for contacting us!</h1>
       <p className='thankYou'>
