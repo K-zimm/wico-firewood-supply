@@ -146,7 +146,7 @@ const IndexPage = () => {
       </form>
       <p className='siteInfo'>
         Our full website is currently being developed and will be available
-        soon. Stay tuned for more infromation, thank you!
+        soon. Stay tuned for more information, thank you!
       </p>
     </main>
   );
