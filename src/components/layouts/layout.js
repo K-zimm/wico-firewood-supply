@@ -5,8 +5,6 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import Footer from './footer';
 import Header from './header';
 
-import '../../styles/main.scss';
-
 library.add(faPhone);
 
 const Layout = (props) => {

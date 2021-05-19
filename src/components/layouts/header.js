@@ -1,30 +1,30 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "logo-dark.png" }) {
-        childImageSharp {
-          fixed(width: 200, height: 200) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <div className='header'>
       <div className='header__top'>
         <FontAwesomeIcon icon='phone' />
       </div>
-      <div className='header__nav'>
-        <div className='header__nav--left'></div>
-        <Img fixed={data.logo.childImageSharp.fixed} />
-        <div className='header__nav--left'></div>
+      <div className='header__nav flex justify-center py-2'>
+        <div className='header__nav--left flex items-center'>
+          <Link to='#about'>About</Link>
+          <Link to='#products'>Products</Link>
+        </div>
+        <StaticImage
+          src='../../images/logo-dark.png'
+          width={200}
+          height={200}
+          placeholder='traced_svg'
+          className='bg-white logo'
+        />
+        <div className='header__nav--left flex items-center'>
+          <Link to='#Specials'>Specials</Link>
+          <Link to='#Contact'>Contact</Link>
+        </div>
       </div>
     </div>
   );

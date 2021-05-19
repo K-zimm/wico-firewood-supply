@@ -1,0 +1,13 @@
+.header {
+  &__nav {
+    height: calc(100px + 2rem);
+    .logo {
+      margin-bottom: calc(-100px - 1rem);
+      width: calc(200px + 2rem);
+      height: calc(200px + 2rem);
+      img {
+        padding: 1rem;
+      }
+    }
+  }
+}
