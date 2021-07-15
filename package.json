@@ -21,6 +21,7 @@
     "dotenv": "^9.0.2",
     "gatsby": "^3.9.1",
     "gatsby-plugin-image": "^1.9.0",
+    "gatsby-plugin-manifest": "^3.9.0",
     "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-datocms": "^2.6.16",
