@@ -1,0 +1,9 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__banner {
+    max-height: 41px;
+    margin-top: -20.5px;
+  }
+}

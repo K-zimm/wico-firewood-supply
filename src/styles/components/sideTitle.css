@@ -1,0 +1,8 @@
+.sideTitle {
+  .text {
+    transform: rotateZ(-90deg);
+    @media screen and (max-width: 767px) {
+      transform: rotateZ(0deg);
+    }
+  }
+}

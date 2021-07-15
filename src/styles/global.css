@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=Bitter:wght@300;400;500;700&display=swap');
 @import './layout/header.css';
+@import './components/contactForm.css';
+@import './components/productCard.css';
+@import './components/sideTitle.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.list {
+  ul {
+    list-style: inherit;
+  }
+}

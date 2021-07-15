@@ -13,10 +13,18 @@ const Footer = () => {
   `);
 
   return (
-    <footer>
+    <footer className='py-4 px-10 text-center bg-green text-white'>
       <p>
         &copy; 2021 by {data.site.siteMetadata.title} | All Rights Reserved |
-        Site created by K.Zimms
+        Site created by{' '}
+        <a
+          href='https://kzimms.com'
+          target='_blank'
+          className='text-orange'
+          rel='noreferrer'
+        >
+          K.Zimms
+        </a>
       </p>
     </footer>
   );

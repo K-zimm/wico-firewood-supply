@@ -1,11 +1,11 @@
 import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 import Footer from './footer';
 import Header from './header';
 
-library.add(faPhone);
+library.add(faPhone, faMapMarkerAlt);
 
 const Layout = (props) => {
   return (
