@@ -40,8 +40,8 @@ const Header = () => {
       </div>
       <div className='header__nav flex justify-center py-2 px-4 lg:px-20 text-2xl uppercase font-semibold tracking-wide'>
         <div className='header__nav--left hidden flex-1 lg:flex items-center justify-evenly'>
-          <Link to='#about'>About</Link>
-          <Link to='#products'>Products</Link>
+          <button onClick={() => scrollTo('#about')}>About</button>
+          <button onClick={() => scrollTo('#products')}>Products</button>
         </div>
         <StaticImage
           src='../../images/logo-dark.png'
@@ -52,8 +52,8 @@ const Header = () => {
           alt='Wisco Firewood Supply Logo'
         />
         <div className='header__nav--right hidden flex-1 lg:flex items-center justify-evenly'>
-          <Link to='#Specials'>Specials</Link>
-          <Link to='#Contact'>Contact</Link>
+          <button onClick={() => scrollTo('#specials')}>Specials</button>
+          <button onClick={() => scrollTo('#contact')}>Contact</button>
         </div>
         <div
           className={`${

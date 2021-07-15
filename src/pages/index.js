@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layouts/layout';
 import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import ProductCard from '../components/productCard';
 import SpecialCard from '../components/specialsCard';
@@ -39,12 +40,12 @@ const IndexPage = ({ data }) => {
               <h1 className='text-5xl sm:text-7xl font-serif max-w-5xl text-center text-white mb-4'>
                 {data.datoCmsHomePage.title}
               </h1>
-              <a
-                href={data.datoCmsHomePage.buttonLink}
+              <button
+                onClick={() => scrollTo(data.datoCmsHomePage.buttonLink)}
                 className='px-4 py-2 bg-red text-white inline-block text-xl uppercase tracking-widest rounded-lg'
               >
                 {data.datoCmsHomePage.buttonText}
-              </a>
+              </button>
             </div>
           </div>
         </div>

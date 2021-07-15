@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const productCard = (props) => {
+const ProductCard = (props) => {
   return (
     <div
       className={
@@ -28,4 +28,4 @@ const productCard = (props) => {
   );
 };
 
-export default productCard;
+export default ProductCard;
